@@ -15,7 +15,7 @@ export default function DictonaryDetail() {
     try {
       // const response = await DataService.get(endpoints.topSozlarById(route?.id));
       const response = await fetch(
-        `https://dictionary.uzfati.uz/api/text/search/?prefix=${dataCt?.word}&search_type=${dataCt?.type}&text_id=${route?.id}`
+        `http://subdomain.dialectalcorpus.uz/api/text/search/?prefix=${dataCt?.word}&search_type=${dataCt?.type}&text_id=${route?.id}`
       );
       const result = await response?.json();
       setApiData(result);

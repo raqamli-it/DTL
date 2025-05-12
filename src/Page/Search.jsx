@@ -20,7 +20,7 @@ const Search = () => {
   const [totalPages, setTotalPages] = useState(1);
 
   // API manzilini o'zgarmas qiymat sifatida belgilash
-  const API_URL = "https://dictionary.uzfati.uz/api/text/search/";
+  const API_URL = "http://subdomain.dialectalcorpus.uz/api/text/search/";
 
   // Qidiruv tugmasi bosilganda API'ga so'rov yuborish
   const handleSearch = async () => {

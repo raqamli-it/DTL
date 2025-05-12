@@ -223,7 +223,7 @@ export default function Dictonary() {
     setLoading(true);
     try {
       const response = await fetch(
-        `https://dictionary.uzfati.uz/api/text/search/?prefix=${wd}&search_type=${tp}`
+        `http://subdomain.dialectalcorpus.uz/api/text/search/?prefix=${wd}&search_type=${tp}`
       );
       setCodeSt(response.status);
       const result = await response.json();
